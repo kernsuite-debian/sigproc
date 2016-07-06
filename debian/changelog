@@ -1,0 +1,5 @@
+sigproc (0.0+20150224-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Wed, 06 Jul 2016 14:30:46 +0000
