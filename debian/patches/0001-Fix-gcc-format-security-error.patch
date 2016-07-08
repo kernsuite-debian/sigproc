@@ -1,0 +1,35 @@
+From: Ole Streicher <ole@aip.de>
+Date: Wed, 6 Jul 2016 17:14:26 +0200
+Subject: Fix gcc format security error
+
+---
+ src/open_files.c   | 2 +-
+ src/write_pulses.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/open_files.c b/src/open_files.c
+index 69e13a6..00af2e4 100644
+--- a/src/open_files.c
++++ b/src/open_files.c
+@@ -22,7 +22,7 @@ int open_files(char scrdsk[])
+   strcat(dir1,"/best_tmp"); 
+  
+   outfile=(char *)malloc(200);
+-  sprintf(outfile, dir1);
++  sprintf(outfile, "%s", dir1);
+  
+   /*
+     Open output files for writing.
+diff --git a/src/write_pulses.c b/src/write_pulses.c
+index 82ccae2..3f91194 100644
+--- a/src/write_pulses.c
++++ b/src/write_pulses.c
+@@ -43,7 +43,7 @@ Pulsus pulse[];
+       return( 1 );
+     }
+       
+-  sprintf(outfile, dir1);
++  sprintf(outfile, "%s", dir1);
+  
+   /*
+     First, open the output data file for writing.
