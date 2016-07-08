@@ -1,4 +1,4 @@
-sigproc (0.0+20150224-1) unstable; urgency=medium
+sigproc (0.0+git20150224-1) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)
 
