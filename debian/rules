@@ -3,6 +3,11 @@
 %:
 	dh $@ --with autoreconf
 
+override_dh_auto_install:
+	dh_auto_install
+	rm debian/sigproc/usr/bin/downsample
+
+
 override_dh_autoreconf:
 	dh_autoreconf autoreconf -- -f -i -I autoconf.boot
 
