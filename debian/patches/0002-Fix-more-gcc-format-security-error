@@ -1,0 +1,13 @@
+Description: more gcc format security fixes
+
+--- sigproc-0.0+20161025.orig/src/tune.c
++++ sigproc-0.0+20161025/src/tune.c
+@@ -708,7 +708,7 @@ int main (int argc, char *argv[])
+ 	if(writejreaper){
+ 
+ 		jreaperfile = fopen(jreaperfilename,"wa");
+-		fprintf(jreaperfile,inpfile);	
++		fprintf(jreaperfile,"%s",inpfile);	
+ 		fprintf(jreaperfile,"\n%lf %lf %lf\n",src_raj,src_dej,tstart);
+ 		fprintf(jreaperfile,"%lf %lf %lf\n",fftperiod,fftsnr,fftdm);
+ 		fprintf(jreaperfile,"%f %f %f %d %f\n", realPer,realAcc,realJer,widthMaxMax,snr);
