@@ -1,4 +1,10 @@
-sigproc (0.0+git20150224-1) unstable; urgency=medium
+sigproc (0.0+20161025-1) xenial; urgency=medium
+
+  *  new upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 23 Jan 2017 13:56:35 +0000
+
+sigproc (0.0+20150224-1) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)
 
