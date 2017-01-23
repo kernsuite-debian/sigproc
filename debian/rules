@@ -5,7 +5,9 @@
 
 override_dh_auto_install:
 	dh_auto_install
-	rm debian/sigproc/usr/bin/downsample
+	mv debian/sigproc/usr/bin/downsample debian/sigproc/usr/bin/downsample.sigproc
+	mv debian/sigproc/usr/bin/fold debian/sigproc/usr/bin/fold.sigproc
+	mv debian/sigproc/usr/bin/quicklook debian/sigproc/usr/bin/quicklook.sigproc
 
 
 override_dh_autoreconf:
