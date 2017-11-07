@@ -1,3 +1,9 @@
+sigproc (0.0+git20161025-1kern1) xenial; urgency=medium
+
+  * update signature
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 07 Nov 2017 17:10:41 +0200
+
 sigproc (0.0+git20161025-1) xenial; urgency=medium
 
   * fix version name
